@@ -48,7 +48,18 @@ var person = {
 //     i++
 // }, 1000)
 
-person.speak("hello")
+// person.speak("hello")
 
+// window.addEventListener('keypress', processKey)
 
+// function processKey(evt){
+//     console.log(evt.key)
+// }
+
+var button = document.querySelector('input[value="SuBmIt"]')
+button.addEventListener('click', function(evt){
+    evt.preventDefault();
+    var text = document.getElementById('fname').value;
+    document.getElementsByTagName('legend')[0].innerHTML = text;
+})
 
